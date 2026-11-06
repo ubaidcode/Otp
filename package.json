@@ -1,0 +1,30 @@
+{
+  "name": "basit-project-01-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "dev": "node --watch --env-file=.env src/server.js",
+    "test": "node --test tests/*.test.js",
+    "admin": "node --env-file=.env scripts/promote-admin.js"
+  },
+  "dependencies": {
+    "bcrypt": "6.0.0",
+    "cloudinary": "2.7.0",
+    "express": "5.1.0",
+    "express-validator": "7.3.2",
+    "file-type": "21.3.4",
+    "jsonwebtoken": "9.0.2",
+    "mongoose": "8.24.5",
+    "multer": "2.4.0",
+    "nodemailer": "10.1.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "10.2.3",
+    "supertest": "7.1.4"
+  }
+}
